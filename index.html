@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FiouReet</title>
+<style>
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(80px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .header {
+        width: 100%;
+        height: 30px;
+        background-color: #f2f2f2;
+        font-family: "Microsoft YaHei", sans-serif;
+        color: black;
+        text-align: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1000;
+        padding-top: 10px;
+    }
+
+    .tab {
+        display: inline-block;
+        margin: 0 20px;
+        position: relative;
+    }
+
+    .tab a {
+        text-decoration: none;
+        color: black; /* 设置标签字体颜色为黑色 */
+    }
+
+    .line {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 60px; /* 标签长度 */
+        height: 2px;
+        background-color: rgb(126, 182, 199);
+    }
+
+    body {
+        font-family: "Microsoft YaHei", sans-serif;
+        color: black;
+        background-image: url('image/White.png');
+        background-size: cover; /* 设置背景图片大小自适应页面 */
+        background-repeat: no-repeat; /* 不重复显示背景图片 */
+    }
+
+    .logo {
+    text-align: center;
+    position: absolute;
+    top: calc(50% - 320px); /* 往中心偏上移动120像素 */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: fadeIn 1s ease forwards;
+    }
+
+    .logo h1 {
+        font-size: 38px;
+        color: black;
+        background-color: transparent;   
+        text-align: center; /* 让文字居中显示 */
+        width: 100%; /* 增加标签的宽度 */  
+        padding-right: 500px;  
+    }
+    
+
+</style>
+</head>
+<body>
+<div class="header">
+    <div class="tab">
+        <a href="#">Home</a>
+        <div class="line"></div>
+    </div>
+    <div class="tab">
+        <a href="#">About</a>
+    </div>
+</div>
+<div class="logo">
+    <h1>Farlix - FiouReet</h1>
+</div>
+</body>
+</html>
